@@ -58,17 +58,12 @@
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
-                <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                <a target="_blank">Anonymous Author(s)</a>,</span>
                   </span>
                   </div>
-
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">IJCAI2025</span>
+
                   </div>
 
                   <div class="column has-text-centered">
@@ -97,7 +92,7 @@
 
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/ijcai-anonymous218/ijcai-anonymous218" target="_blank"
+                    <a href="https://github.com/ijcai-anonymous1378/ijcai-anonymous1378" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -132,12 +127,21 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
         <div class="item">
           <!-- Your image here -->
-          <img src="static/images/figure.jpg" alt="MY ALT TEXT"/>
+          <img src="static/images/figure_1.jpg" alt="MY ALT TEXT"/>
           <h2 class="subtitle has-text-centered">
-            Model Structure.
+            Architecture overview.
           </h2>
+      </div>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/figure_2.jpg" alt="MY ALT TEXT"/>
+          <h2 class="subtitle has-text-centered">
+             Frequency disentanglement module.
+          </h2>
+      </div>
       </div>
   </div>
 </div>
@@ -154,8 +158,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Financial asset price prediction is a critical task in financial analysis, yet it is challenging due to the non-stationarity of financial markets in which the distribution changes over time. Previous methods often simplify it into stationary market, which limits effectiveness in real-world. To address this, we propose Market-state Jump Diffusion Framework(MJDF), which contains a Market-state jump diffusion stochastic process(MJD-P) to model non-stationarity and a Market-state jump diffusion model(MJD-M) to do prediction with non-stationarity. MJD-P could models different stationary and non-stationary components of financial price dynamics, including diffusion, drift, and jump, which is expressed as an ordinary differential equation and could be sovled the ODE to get the componment with a neural network. MJD-M integrate these components into a Multimodal large language model to do prediction. Through temporal point position encoding, jump diffusion embedding, jump diffusion attention and jump diffusion uncertainty mechanisms, MJD-M could to do price forecast across various market conditions in an interpretable way. Futuhermore, we introduce a general modality synthesizer(MJD-S) that uses a unified adversarial masking post-training strategy to complete missing modalities and fine-tune MJD-M.Extensive experiments on real-world datasets, including stocks and cryptocurrencies, demonstrate that our approach outperforms existing methods in price movement prediction, achieving high accuracy and trading profitability.
-        </div>
+            Financial asset price prediction is a critical task in financial analysis, yet it is challenging due to the non-stationarity of financial markets in which the distribution changes over time. Previous methods often simplify it into stationary market, which limits effectiveness in real-world. To address this, we propose Market-State Jump Diffusion Framework(MSJD-F), which contains a Market-State Jump Diffusion stochastic process(MSJD-P) to model non-stationarity and a Market-State Jump Diffusion model(MSJD-M) to do prediction with non-stationarity. MSJD-P models different stationary and non-stationary components of financial price dynamics, including diffusion, drift, and jump, which is expressed as an ordinary differential equation and could be sovled the ODE to get the componment with a neural network. MSJD-M integrate these components into a Multimodal large language model to do prediction. Through temporal point position encoding, jump diffusion embedding, jump diffusion attention and jump diffusion uncertainty mechanisms, MSJD-M could to do price forecast across various market conditions in an interpretable way. Futuhermore, we introduce a general modality synthesizer(MSJD-S) that uses a unified adversarial masking post-training strategy to complete missing modalities and fine-tune MSJD-M.Extensive experiments on real-world datasets, including stocks and cryptocurrencies, demonstrate our approach outperforms existing methods in price movement prediction task.        </div>
       </div>
     </div>
   </div>
@@ -185,9 +188,9 @@
     <div class="container">
         <div class="item">
           <!-- Your image here -->
-          <img src="static/images/perforance.jpg" alt="MY ALT TEXT"/>
+          <img src="static/images/result.jpg" alt="MY ALT TEXT"/>
           <h2 class="subtitle has-text-centered">
-            Performance comparison of all methods on six profitable metrics. Results in red, yellow and green show the best, second best and third best results on each dataset. The improvement row is the MARL over the best-performing baselines.
+             Performance comparison of all methods on six profitable metrics. Results in red, yellow and green show the best, second best and third best results on each dataset. The improvement row is the MARL over the best-performing baselines.
           </h2>
   </div>
 </div>
